@@ -1,32 +1,27 @@
-# Next.js + Tailwind CSS Example
+1. Create Next App
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+> npx create-next-app --example with-tailwindcss sanity-yt-build
 
-## Deploy your own
+2. install sanity & initialize sanity studio in the directory
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+> npx install -g @sanity/cli && sanity init
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+3. start sanity studio
 
-## How to use
+> npx sanity start
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+5. Building the header component
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+6. Adding sanity CMS
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+7. Adding Nextjs SSR
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+8. Implimenting the post section
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+9. Linking Post Page
 
-#Login sanity
-npx sanity init --coupon sonny2022
+10. Building the post page
 
-#Header
+11. Adding Comments
+
+12. Deploy on vercel

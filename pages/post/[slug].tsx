@@ -18,7 +18,6 @@ interface IFormInput {
 
 const Post = ({ post }: Props) => {
   const [submitted, setSubmitted] = useState(false);
-  console.log(post);
   const {
     register,
     handleSubmit,
@@ -136,7 +135,6 @@ const Post = ({ post }: Props) => {
               rows={8}
             />
           </label>
-          {/* errors will return when field validation fails */}
           <div className="flex flex-col p-5">
             {errors.name && (
               <span className="text-red-500">- The Name Field is required</span>
@@ -161,6 +159,7 @@ const Post = ({ post }: Props) => {
       <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-500 shadow space-y-2">
         <h3 className="text-4xl">Comments</h3>
         <hr className="pb-2" />
+
         {post.comments.map((comment) => (
           <div key={comment._id}>
             <p>
@@ -208,7 +207,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     _type== "comment" &&
     post._ref == ^._id &&
     approved == true],
-  descrption,
+  description,
   mainImage,
   slug,
   body
